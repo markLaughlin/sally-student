@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset = "utf-8">
+<meta name="viewport" content="width=device-width">
+<meta name="description=" content="Resume for Sally Student">
+<title>Student Resume</title>
+<link href="styles.css" type="text/css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+</head>
+
+<body>
+
+<div id="application-root"></div>
+
+<script src="https://unpkg.com/react@16/umd/react.development.js"></script>
+        
+<script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+        
+<script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+
+<script type="text/babel">
+    function App(){
+    return (
+    <div id="resumeDiv">
+
+        <header role="banner">
+        <h1>Resume for Sally Student</h1>
+        I'm an aspiring full-stack web developer. I love cats, coding, and crocheting.<b/>
+        </header>
+
+        <main role="main">
+
+        <section role="contactInfo">
+        <h2>Contact Information</h2>
+        Sally Student<br/>
+        Email: sally@example.com<br/>
+        Phone: 217 867 5309<br/>
+        Twitter: <a href="https://twitter.com/sallyStudent">@sallyStudent</a>
+        <div id="container">
+        <img id="sallyPic" src="sally-student.JPG"/>
+        </div>
+        </section>
+
+        <section role="skills">
+        <h2>Skills</h2>
+        <li>HTML</li>
+        <li>Javascript</li>
+        <li>CSS</li>
+        <li>jQuery</li>
+        </section>
+
+        <section role="education">
+        <h2>Education</h2>
+        <li>Certificate Of Completion, Web Developer Track, Bloc Coding Academy</li>
+        <li>Bachelors Degree, English Literature, Southern Illinois University.</li>
+        </section>
+
+        <section role="work history">
+        <h2>Work History</h2>
+        <li>Job: Fundraiser for Acme Nonprofit Corporation</li>
+        <li>Employed July 2012 to present</li>
+        <li> Duties: worked in various capacities to raise funds. Maintained the company database.</li>
+        <p></p>
+        <li>Job: Dishwashwer for Southern Illinois University</li>
+        <li>Employed August 2018 to June 2012</li>
+        <li> Duties: worked as a dishwasher and prep cook in the Southern Illinois University cafeteria. Student job.</li>
+        </section>
+        </main>
+
+        <footer role="footer">
+                <address>
+                <a href="mailto:sally@example.com">Send me an email</a>
+                </address>  
+        </footer>
+
+    </div>);
+    }
+
+    ReactDOM.render(
+        <App />,
+    document.querySelector("#application-root")
+    )
+</script>
+
+</body>
+</html>

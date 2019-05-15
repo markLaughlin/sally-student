@@ -1,0 +1,55 @@
+body {
+    background-color: azure;
+    border: 1px solid aquamarine;
+    padding: 30px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+  }
+
+  #resumeDiv{
+      text-align: center;
+  }
+
+  address {
+      text-align: center;
+  }
+
+  #container{
+      border: 1px aquamarine solid;
+      margin-top: 10px;
+      margin-bottom: 10px;
+  }
+
+  #container, #sallyPic{
+      width: 200px;
+      height: 300px;
+      margin-left: auto;
+      margin-right: auto;
+  }
+
+  footer{
+      width: 100%;
+      padding: 10px;
+      margin-top: 10px;
+  }
+
+  li{
+      list-style: none;
+  }
+
+
+  @media screen and (min-width: 800px) {
+    #resumeDiv{
+        text-align: justify;
+    }
+
+    #container, #sallyPic{
+        margin-left: 0%;
+        margin-right: 0%;
+    }
+}
+
+
+
+
+
