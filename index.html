@@ -3,7 +3,7 @@
 <head>
 <meta charset = "utf-8">
 <meta name="viewport" content="width=device-width">
-<meta name="description=" content="Resume for Sally Student">
+<meta name="description=" content="Resume for {props.student} Student">
 <title>Student Resume</title>
 <link href="styles.css" type="text/css" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
@@ -19,13 +19,15 @@
         
 <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
 
+
 <script type="text/babel">
-    function App(){
+
+    function App(props){
+        console.log(props);
     return (
     <div id="resumeDiv">
-
         <header role="banner">
-        <h1>Resume for Sally Student</h1>
+        <h1>Resume for {props.student} Student</h1>
         I'm an aspiring full-stack web developer. I love cats, coding, and crocheting.<b/>
         </header>
 
@@ -33,10 +35,10 @@
 
         <section role="contactInfo">
         <h2>Contact Information</h2>
-        Sally Student<br/>
-        Email: sally@example.com<br/>
+        {props.student} Student<br/>
+        Email: {props.student}@example.com<br/>
         Phone: 217 867 5309<br/>
-        Twitter: <a href="https://twitter.com/sallyStudent">@sallyStudent</a>
+        Twitter: <a href="https://twitter.com/{props.student}Student">@{props.student}Student</a>
         <div id="container">
         <img id="sallyPic" src="sally-student.jpg"/>
         </div>
@@ -70,7 +72,7 @@
 
         <footer role="footer">
                 <address>
-                <a href="mailto:sally@example.com">Send me an email</a>
+                <a href="mailto:{props.student}@example.com">Send me an email</a>
                 </address>  
         </footer>
 
@@ -78,7 +80,9 @@
     }
 
     ReactDOM.render(
-        <App />,
+        <App 
+        student = "Sally"
+        />,
     document.querySelector("#application-root")
     )
 </script>

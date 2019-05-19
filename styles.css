@@ -37,7 +37,6 @@ body {
       list-style: none;
   }
 
-
   @media screen and (min-width: 800px) {
     #resumeDiv{
         text-align: justify;
